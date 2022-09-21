@@ -27,7 +27,7 @@ fun main() {
         resultDiscount = discount2 + regularDiscount2
     }
 
-    var result = if (regularCustomer === false) resultSumma else resultVipSumma
+    var result = if (!regularCustomer) resultSumma else resultVipSumma
 
 
     println("Сумма к оплате: $result руб. Скидка составила: $resultDiscount руб.")
